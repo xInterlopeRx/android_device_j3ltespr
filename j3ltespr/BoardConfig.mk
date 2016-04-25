@@ -22,7 +22,7 @@
 
 # Inherit from common a5
 -include device/samsung/j3ltespr-common/BoardConfigCommon.mk
-
+-include device/samsung/j3ltespr-common/common.mk
 # Inherit from the proprietary version
 -include vendor/samsung/j3ltespr/BoardConfigVendor.mk
 
