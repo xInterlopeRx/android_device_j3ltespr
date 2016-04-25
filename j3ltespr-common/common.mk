@@ -156,7 +156,8 @@ PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
     VisualizationWallpapers \
-    librs_jni
+    librs_jni \
+    libtime_genoff.so 
 
 # WCNSS service daemon
 PRODUCT_PACKAGES += \
