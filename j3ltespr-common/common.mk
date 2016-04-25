@@ -15,7 +15,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Also get non-open-source specific aspects if available
-$(call inherit-product, vendor/samsung/j3ltespr/j3ltespr-vendor.mk)
+$(call inherit-product, vendor/sasmung/j3ltespr/j3ltespr-vendor.mk)
 
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/j3ltespr-j3ltespr/overlay
