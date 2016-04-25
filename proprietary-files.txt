@@ -140,6 +140,14 @@ lib/drm/libdrmwvmplugin.so
 vendor/lib/libWVStreamControlAPI_L1.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
+# Keystore
+vendor/lib/lib-sec-disp.so
+vendor/lib/libSecureUILib.so
+vendor/lib/libStDrvInt.so
+vendor/lib/libsecureui.so
+vendor/lib/libsecureui_svcsock.so
+vendor/lib/libsecureuisvc_jni.so
+
 # GPS
 bin/irsc_util
 bin/loc_launcher
@@ -250,7 +258,7 @@ vendor/lib/libthermalioctl.so
 -app/TimeService/TimeService.apk
 bin/time_daemon
 -vendor/lib/libtime_genoff.so
--vendor/lib/libTimeService.so
+vendor/lib/libTimeService.so
 lib/libcommon_time_client.so
 
 # Other
