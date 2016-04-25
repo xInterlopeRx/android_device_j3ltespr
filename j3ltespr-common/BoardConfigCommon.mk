@@ -23,7 +23,7 @@
 # inherit from qcom-common
 -include device/samsung/qcom-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/a5-common
+LOCAL_PATH := device/samsung/j3ltespr-common
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8916
@@ -36,19 +36,17 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_CPU_VARIANT := cortex-a53
 TARGET_CPU_CORTEX_A53 := true
 
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/a5-common/include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/j3ltespr-common/include
 
 # Kernel
-BOARD_CUSTOM_BOOTIMG_MK      := device/samsung/a5-common/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK      := device/samsung/j3ltespr-common/mkbootimg.mk
 BOARD_KERNEL_CMDLINE         := console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci androidboot.selinux=enforcing
 BOARD_KERNEL_BASE            := 0x80000000
 BOARD_RAMDISK_OFFSET         := 0x02000000
 BOARD_KERNEL_TAGS_OFFSET     := 0x01e00000
 BOARD_KERNEL_SEPARATED_DT    := true
 BOARD_KERNEL_PAGESIZE        := 2048
-TARGET_KERNEL_SOURCE         := kernel/samsung/msm8916
-
-TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
+TARGET_KERNEL_SOURCE         :=  kernel/samsung/j3ltespr
 
 # Partition sizes
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -70,7 +68,7 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
 
 # Custom RIL class
-BOARD_RIL_CLASS := ../../../device/samsung/a5-common/ril/
+BOARD_RIL_CLASS := ../../../device/samsung/j3ltespr-common/ril/
 
 # NFC
 BOARD_HAVE_NFC := true
@@ -130,7 +128,7 @@ TARGET_PROVIDES_CAMERA_HAL := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 
 # CMHW
-BOARD_HARDWARE_CLASS += device/samsung/a5-common/cmhw
+BOARD_HARDWARE_CLASS += device/samsung/j3ltespr-common/cmhw
 
 # Workaround to avoid issues with legacy liblights on QCOM platforms
 TARGET_PROVIDES_LIBLIGHT := true
@@ -161,7 +159,7 @@ BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-    device/samsung/a5-common/sepolicy
+    device/samsung/j3ltespr-common/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     bluetooth_loader.te \
@@ -183,7 +181,7 @@ BOARD_SEPOLICY_UNION += \
 
 
 # Misc.
-TARGET_SYSTEM_PROP := device/samsung/a5-common/system.prop
+TARGET_SYSTEM_PROP := device/samsung/j3ltespr-common/system.prop
 
 # TWRP
 # Display
@@ -195,11 +193,11 @@ TW_NEW_ION_HEAP := true
 TW_TARGET_USES_QCOM_BSP := true
 
 # Keys
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/a5-common/recovery/recovery_keys.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/j3ltespr-common/recovery/recovery_keys.c
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Storage
-TARGET_RECOVERY_FSTAB := device/samsung/a5-common/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/samsung/j3ltespr-common/rootdir/etc/fstab.qcom
 TW_INTERNAL_STORAGE_PATH := "/data/media"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
