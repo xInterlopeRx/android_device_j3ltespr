@@ -1,1 +1,1 @@
-add_lunch_combo cm_a5ultexx-userdebug
+add_lunch_combo cm_j3ltespr-userdebug
