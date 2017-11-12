@@ -156,9 +156,6 @@ BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += \
-    device/samsung/j3ltespr/sepolicy
-
 # Misc.
 TARGET_SYSTEM_PROP := device/samsung/j3ltespr/system.prop
 
