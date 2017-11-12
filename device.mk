@@ -23,6 +23,6 @@ TARGET_SCREEN_WIDTH := 720
 # Device overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/j3ltespr/overlay
 
-# Inherit from a5-common
+# Inherit from samsung/qcom-common
 $(call inherit-product, device/samsung/j3ltespr/common.mk)
 
