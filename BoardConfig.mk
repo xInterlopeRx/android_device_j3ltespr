@@ -29,6 +29,9 @@
 # Assert
 TARGET_OTA_ASSERT_DEVICE := j3ltespr,j3ltesprxx
 
+TARGET_INIT_VENDOR_LIB := libinit_j3ltespr
+TARGET_RECOVERY_DEVICE_MODULES := libinit_j3ltespr
+
 # Kernel
 TARGET_KERNEL_CONFIG         := msm8916_sec_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_j3lte_spr_defconfig
@@ -39,5 +42,3 @@ TW_THEME := portrait_hdpi
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/samsung/j3ltespr/init/init_j3ltespr.cpp
