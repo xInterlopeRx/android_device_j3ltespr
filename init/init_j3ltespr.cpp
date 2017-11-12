@@ -28,29 +28,26 @@
  */
 
 #include <stdlib.h>
+#include <stdio.h>
+#define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
+#include <sys/_system_properties.h>
 
 #include "vendor_init.h"
 #include "property_service.h"
 #include "log.h"
 #include "util.h"
 
-#include "vendor_init.h"
 
-
-void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *board_type)
-{
+void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *board_type){
     char platform[PROP_VALUE_MAX];
     char bootloader[PROP_VALUE_MAX];
     char device[PROP_VALUE_MAX];
     char devicename[PROP_VALUE_MAX];
     int rc;
-
-    UNUSED(msm_id);
-    UNUSED(msm_ver);
-    UNUSED(board_type);
-
+}
+{
     rc = property_get("ro.board.platform", platform);
-    if (!rc || !ISMATCH(platform, ANDROID_TARGET))
+    if (!rc (platform, ANDROID_TARGET))
         return;
 
     property_get("ro.bootloader", bootloader);

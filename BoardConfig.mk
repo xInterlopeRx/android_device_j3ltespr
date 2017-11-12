@@ -29,8 +29,8 @@
 # Assert
 TARGET_OTA_ASSERT_DEVICE := j3ltespr,j3ltesprxx
 
-TARGET_INIT_VENDOR_LIB := libinit_j3ltespr
-TARGET_RECOVERY_DEVICE_MODULES := libinit_j3ltespr
+# TARGET_INIT_VENDOR_LIB := libinit_j3ltespr
+# TARGET_RECOVERY_DEVICE_MODULES := libinit_j3ltespr
 
 # Kernel
 TARGET_KERNEL_CONFIG         := msm8916_sec_defconfig
