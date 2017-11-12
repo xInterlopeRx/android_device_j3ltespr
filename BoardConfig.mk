@@ -24,7 +24,7 @@
 -include device/samsung/j3ltespr/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
--include vendor/samsung/j3ltespr/BoardConfigVendor.mk
+-include vendor/samsung/msm8916-common/BoardConfigVendor.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := j3ltespr,j3ltesprxx
